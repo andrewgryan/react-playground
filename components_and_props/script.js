@@ -4,8 +4,17 @@ function Welcome(props) {
     return <h1>Hello, {props.name}!</h1>;
 }
 
-const element = <Welcome name="Sarah" />;
+function App() {
+    return (
+        <div>
+            <Welcome name="Alice" />
+            <Welcome name="Bob" />
+            <Welcome name="Sarah" />
+            <Welcome name="Steve" />
+        </div>
+    );
+}
 ReactDOM.render(
-    element,
+    <App />,
     document.getElementById('root')
 );
