@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, world!</title>
+    {{ bokeh_css }}
+    {{ bokeh_js }}
+</head>
+<body>
+    {{ plot_div|indent(8) }}
+    {{ plot_script|indent(8) }}
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script charset="utf-8" src="script.js" type="text/babel"></script>
+</body>
+</html>
+
